@@ -45,7 +45,7 @@
     <div class="card-body">
       <h4 class="card-title">Lamp</h4>
       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">Get Details</a>
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Get Details</a>
     </div>
   </div>
   <div class="card" style="width:300px">
@@ -53,7 +53,7 @@
     <div class="card-body">
       <h4 class="card-title">Lamp</h4>
       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">Get Details</a>
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Get Details</a>
     </div>
   </div>
   <div class="card" style="width:300px">
@@ -61,7 +61,7 @@
     <div class="card-body">
       <h4 class="card-title">Lamp</h4>
       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">Get Details</a>
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Get Details</a>
     </div>
   </div>
 
@@ -94,6 +94,52 @@
   </div>
 
  </div>
+
+
+ <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" style="float: left;">Details</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+       <div class="row">
+         <div class="col-lg-3" >
+          <p style="float: right;">Name:</p>
+         </div>
+         <div class="col-lg-9">
+          <p >Lamp</p>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-3">
+         <p style="float: right;">Price:</p>
+        </div>
+        <div class="col-lg-9">
+         <p>$100.13</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+         <p style="float: right;">Description:</p>
+        </div>
+        <div class="col-lg-9">
+         <p>This is the Description that will explain about the procduct. abab abababa abababab abababa ababba</p>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </div>
 
 </body>
