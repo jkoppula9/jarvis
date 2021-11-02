@@ -1,0 +1,14 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "description": "a basic jarvis app",
+  "main": "index.js",
+  "scripts": {
+    "start": "jarvis ."
+  },
+  "author": "Akanksha",
+  "license": "CSU",
+  "dependencies": {
+    "jarvis": "^10.1.3"
+  }
+}
