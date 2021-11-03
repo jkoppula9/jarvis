@@ -1,0 +1,20 @@
+# Your defualt city
+City = OHIO
+
+# Directories of backup - seperated by comma's in  - ex - D:/myfiles/images , E:/data/documents
+Directories = D:/myfiles
+
+# path to backup - ex - F:/myBackup
+backUpPath = F:/myfiles
+
+#  path to backup for jarvis - ex - F:/myBackup
+backUpPathForJarvis = F:/jarvisBackup
+
+# User Name :
+userName = your_name_here
+
+# Greeting :
+greeting = Welcome
+
+# Make start sound (true / false) :
+makeStartSound = true

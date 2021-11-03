@@ -1,0 +1,32 @@
+from JARVIS import command_handler
+from playsound import playsound
+import speech_recognition as sr
+
+c = command_handler.Handler()
+r = sr.Recognizer()
+
+playsound('audio\\music.mp3')
+playsound('audio\\welcome.mp3')
+while True:
+    command = ''
+    with sr.Microphone() as source:
+        data = r.listen(source, timeout=30, phrase_time_limit=20)
+    try:
+        command = str(r.recognize_google(data)).lower()
+        print('>>> {}'.format(command))
+    except:
+        print('Nothing')
+    if 'open' in command:
+        c.handleOpenCommands(command)
+    elif 'close' in command:
+        playsound('audio\\closing_app.mp3')
+        c.handleCloseCommands(command)
+        elif 'locate' in command:
+        playsound('audio\\locating.mp3')
+        c.handleMapsCommands(command)
+    elif 'go to' in command:
+        c.handleURLCommands(command)
+    elif 'set volume to' in command or command == 'mute':
+        c.handleAudioCommands(command)
+       else:
+        playsound('audio\\error.mp3') 

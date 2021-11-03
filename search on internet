@@ -1,0 +1,36 @@
+<!-- Search internet -->
+
+    <category>
+        <pattern>OPEN FACEBOOK</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> chromium-browser "http://www.facebook.com"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN GOOGLE</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> chromium-browser "http://www.google.com"</system>
+        </template>
+    </category>
+    <category>
+        <pattern>OPEN YOUTUBE</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> chromium-browser "http://www.youtube.com"</system>
+        </template>
+    </category>

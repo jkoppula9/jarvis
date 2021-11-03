@@ -1,0 +1,32 @@
+<!-- MUSIC CONTROLS -->
+    <category>
+        <pattern>PLAY MUSIC</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+               <li>Playing music!</li>
+            </random>
+            <system> rhythmbox-client --play</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PLAY MUSIC *</pattern>
+      
+    </category>
+
+    <category>
+        <pattern>* PLAY MUSIC</pattern>
+        <template>
+            <srai>PLAY MUSIC</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PLAY MUSIC *</pattern>
+        <template>
+            <srai>PLAY MUSIC</srai>
+        </template>
+    </category>
