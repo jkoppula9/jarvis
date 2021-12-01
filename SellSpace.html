@@ -42,7 +42,11 @@
   <input type="text" id="searchtxt" placeholder="Search.." style="width: 50%;">
   <input type="button" id="seachbtn" onclick="search()" value="Search">  </input>
   <br>
- <div id="maindiv" class="row"></div>
+  <br>
+ <div id="maindiv" class="row">
+   
+ </div>
+ <img src="images/noresults.png" id="noresults" style="width: 50%;height: 50%;display: none;">
 
  <div id="myModal" class="modal fade" role="dialog"  >
   <div class="modal-dialog">
@@ -60,24 +64,33 @@
           <p style="float: right;">Name:</p>
          </div>
          <div class="col-lg-9">
-          <p >Lamp</p>
+          <p id="selectedItemName">Lamp</p>
          </div>
        </div>
        <div class="row">
         <div class="col-lg-3">
-         <p style="float: right;">Price:</p>
+         <p style="float: right;" >Price:</p>
         </div>
         <div class="col-lg-9">
-         <p>$100.13</p>
+         <p id="selectedItemPrice">$100.13</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-3">
-         <p style="float: right;">Description:</p>
+         <p style="float: right;" >Description:</p>
         </div>
-        <div class="col-lg-9">
-         <p>This is the Description that will explain about the procduct. abab abababa abababab abababa ababba</p>
+        <div class="col-lg-9" id="selectedItemDescription">
+         <p>This is the Description that will explain about the procduct.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+         <p style="float: right;" >Contact Info:</p>
+        </div>
+        <div class="col-lg-9" id="selectedItemContact">
+         <p></p>
         </div>
       </div>
       </div>
